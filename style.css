@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1b1a1a;
+}
+
+.container{
+    width: 100%;
+    background: url(1/br1.png);
+    padding: 4.3rem 1.25rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    /* -webkit-text-stroke: 5px white; */
+}
+
+.container h2{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.container p{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.searchBox{
+    max-width: 37.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input{
+    padding: 0.7rem;
+    width: 70%;
+    border-radius: 0.5rem;
+    outline: 0;
+    border: 1px solid red;
+    font-size: 1rem;
+}
+
+.searchBox button{
+    padding: 12px 20px;
+    background: red;
+    border: 0;
+    outline: none;
+    border: 1px solid red;
+    font-size: 1rem;
+    color: #f8f8f8;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.notFound{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #f8f8f8;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+.recipe-card{
+    width: 12.5rem;
+    /* height: auto; */
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.recipe-card button{
+    padding: 6px 10px;
+    margin: 10px 0;
+    background: rgb(105, 229, 105);
+    color: #fff;
+    border: 0;
+    border-radius: 0.4rem;
+}
+
+
+
+
+
+.popup-card {
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.3rem;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 0.8rem;
+    z-index: 1000; /* Ensure it appears on top */
+    border: 2px solid red;
+    display: none; /* Initially hidden */
+    overflow-y: auto; /* Allow scrolling */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+.popup-card h3 {
+    margin: 0.9rem;
+    color: #333;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.popup-card p {
+    margin: 0.9rem;
+    color: #333;
+    font-size: 1.2rem;
+    /* overflow-y: auto; */
+    max-height: 18rem;
+    padding-right: 0.7rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    background: rgb(244, 81, 81);
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border: 0;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1010; /* Ensure it's on top */
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgb(200, 50, 50);
+}
+
+
+
+
+
